@@ -3,6 +3,8 @@ package es.iesquevedo.app;
 import es.iesquevedo.dao.JsonSocioDao;
 import es.iesquevedo.dao.JsonSocioDaoImpl;
 
+import org.jboss.weld.environment.se.Weld;
+import org.jboss.weld.environment.se.WeldContainer;
 import java.util.Scanner;
 
 public class Main {

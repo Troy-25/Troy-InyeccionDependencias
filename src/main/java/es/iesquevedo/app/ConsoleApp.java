@@ -3,14 +3,18 @@ package es.iesquevedo.app;
 import es.iesquevedo.dao.JsonSocioDao;
 import es.iesquevedo.modelo.Socio;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
+@ApplicationScoped
 public class ConsoleApp {
     private final JsonSocioDao socioDao;
 
-    // los DAOs/servicio se crean internamente
+    @Inject// los DAOs/servicio se crean internamente
     public ConsoleApp(JsonSocioDao socioDao) {
         this.socioDao = socioDao;
     }
